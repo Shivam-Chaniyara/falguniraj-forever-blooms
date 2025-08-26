@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'serif': ['Playfair Display', 'Georgia', 'serif'],
+				'script': ['Dancing Script', 'cursive'],
+				'sans': ['Inter', 'system-ui', 'sans-serif']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +56,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				wedding: {
+					rose: {
+						primary: 'hsl(var(--rose-primary))',
+						light: 'hsl(var(--rose-light))'
+					},
+					lavender: 'hsl(var(--lavender))',
+					cream: 'hsl(var(--cream))',
+					gold: 'hsl(var(--gold))',
+					sage: 'hsl(var(--sage))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

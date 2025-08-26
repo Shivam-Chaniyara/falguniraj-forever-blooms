@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Wedding Theme - Floral Elegance */
+    --background: 351 44% 97%;
+    --foreground: 345 20% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 350 50% 98%;
+    --card-foreground: 345 20% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 350 50% 98%;
+    --popover-foreground: 345 20% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 82% 52%;
+    --primary-foreground: 350 50% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 320 15% 88%;
+    --secondary-foreground: 345 20% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 320 20% 92%;
+    --muted-foreground: 345 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 93% 85%;
+    --accent-foreground: 345 20% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 320 25% 88%;
+    --input: 320 25% 88%;
+    --ring: 340 82% 52%;
 
-    --radius: 0.5rem;
+    /* Custom Wedding Colors */
+    --rose-primary: 340 82% 52%;
+    --rose-light: 340 60% 75%;
+    --lavender: 270 50% 85%;
+    --cream: 45 93% 95%;
+    --gold: 45 95% 70%;
+    --sage: 120 25% 75%;
+
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(var(--rose-primary)) 0%, hsl(var(--lavender)) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--rose-light)) 100%);
+    --gradient-soft: linear-gradient(45deg, hsl(var(--background)) 0%, hsl(var(--cream)) 100%);
+
+    /* Shadows */
+    --shadow-romantic: 0 10px 40px -15px hsl(var(--rose-primary) / 0.3);
+    --shadow-soft: 0 5px 20px -5px hsl(var(--rose-primary) / 0.15);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +74,34 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
+    /* Wedding sites typically don't need dark mode, but keeping minimal dark theme */
+    --background: 345 20% 8%;
+    --foreground: 350 50% 95%;
+    --card: 345 20% 10%;
+    --card-foreground: 350 50% 95%;
+    --popover: 345 20% 10%;
+    --popover-foreground: 350 50% 95%;
+    --primary: 340 82% 62%;
+    --primary-foreground: 345 20% 8%;
+    --secondary: 345 15% 18%;
+    --secondary-foreground: 350 50% 95%;
+    --muted: 345 15% 18%;
+    --muted-foreground: 350 20% 65%;
+    --accent: 45 93% 75%;
+    --accent-foreground: 345 20% 8%;
+    --destructive: 0 62.8% 50%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 345 15% 18%;
+    --input: 345 15% 18%;
+    --ring: 340 82% 62%;
+    --sidebar-background: 345 20% 8%;
+    --sidebar-foreground: 350 50% 95%;
+    --sidebar-primary: 340 82% 62%;
+    --sidebar-primary-foreground: 345 20% 8%;
+    --sidebar-accent: 345 15% 18%;
+    --sidebar-accent-foreground: 350 50% 95%;
+    --sidebar-border: 345 15% 18%;
+    --sidebar-ring: 340 82% 62%;
   }
 }
 
@@ -100,6 +111,75 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
+  }
+
+  /* Beautiful scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--rose-primary));
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--rose-light));
+  }
+}
+
+@layer components {
+  .wedding-gradient {
+    background: var(--gradient-romantic);
+  }
+
+  .sunset-gradient {
+    background: var(--gradient-sunset);
+  }
+
+  .soft-gradient {
+    background: var(--gradient-soft);
+  }
+
+  .romantic-shadow {
+    box-shadow: var(--shadow-romantic);
+  }
+
+  .soft-shadow {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .petal-fall {
+    animation: petalFall 10s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes petalFall {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
