@@ -19,9 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
 				'serif': ['Playfair Display', 'Georgia', 'serif'],
-				'script': ['Dancing Script', 'cursive'],
-				'sans': ['Inter', 'system-ui', 'sans-serif']
+				'script': ['Dancing Script', 'cursive']
 			},
 			colors: {
 				border: 'hsl(var(--border))',

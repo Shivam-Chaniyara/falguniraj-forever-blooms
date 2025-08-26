@@ -111,7 +111,11 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-serif;
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  html {
+    @apply dark;
   }
 
   /* Beautiful scrollbar */

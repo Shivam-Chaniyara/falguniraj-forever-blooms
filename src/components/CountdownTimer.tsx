@@ -30,15 +30,19 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center gap-4 flex-wrap">
+    <div className="flex justify-center items-center gap-6 flex-wrap">
       {Object.entries(timeLeft).map(([unit, value]) => (
-        <Card key={unit} className="p-6 text-center romantic-shadow bg-card/80 backdrop-blur-sm">
-          <div className="text-3xl font-bold text-wedding-rose-primary mb-2">
-            {value.toString().padStart(2, '0')}
+        <Card key={unit} className="relative p-8 text-center romantic-shadow bg-gradient-to-br from-wedding-rose-primary/20 to-wedding-lavender/20 backdrop-blur-sm border-wedding-rose-primary/30 overflow-hidden group hover:scale-105 transition-all duration-300">
+          <div className="absolute inset-0 bg-gradient-to-br from-wedding-rose-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="relative z-10">
+            <div className="text-5xl font-bold text-wedding-rose-primary mb-3 animate-pulse">
+              {value.toString().padStart(2, '0')}
+            </div>
+            <div className="text-sm text-muted-foreground uppercase tracking-widest font-medium">
+              {unit}
+            </div>
           </div>
-          <div className="text-sm text-muted-foreground uppercase tracking-wider">
-            {unit}
-          </div>
+          <div className="absolute -top-2 -right-2 w-4 h-4 bg-wedding-rose-primary/30 rounded-full animate-ping" />
         </Card>
       ))}
     </div>
